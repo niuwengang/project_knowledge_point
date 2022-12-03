@@ -1,9 +1,7 @@
 /*
-    rosr若指定多线程方式接收多话题
-    例如:
-    MultiThreadedSpinner spinner(3);
-    spinner.spin();
-    需要在回调函数中对接收到的传感器数据进行加锁
+demo1
+互斥锁保证了每次只有一个线程进行写入操作同一资源
+从而保证了多线程情况下数据的正确性
 */
 
 #include <thread>
